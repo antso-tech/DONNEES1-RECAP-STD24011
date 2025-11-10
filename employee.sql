@@ -24,11 +24,17 @@ CREATE TABLE TEAM (
     name VARCHAR(50) NOT NULL
 )
 
-SELECT id_employee, first_name, last_name FROM EMPLOYEE WHERE id_team ISNULL
+SELECT id_employee, first_name, last_name 
+FROM EMPLOYEE 
+WHERE id_team ISNULL
 
 SELECT * from LEAVE;
 
-SELECT e.id_employee, e.first_name, e.last_name FROM EMPLOYEE e LEFT JOIN LEAVE l on e.id_employee = l.id_employee WHERE l.id_employee ISNULL
+SELECT e.id_employee, e.first_name, e.last_name 
+FROM EMPLOYEE e 
+LEFT JOIN LEAVE l 
+on e.id_employee = l.id_employee 
+WHERE l.id_employee ISNULL
 
 SELECT
 l.id_leave, l.start_date, l.end_date, e.first_name, e.last_name, t.name as team
