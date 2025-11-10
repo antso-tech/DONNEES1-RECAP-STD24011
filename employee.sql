@@ -24,6 +24,5 @@ CREATE TABLE TEAM (
     name VARCHAR(50) NOT NULL
 )
 
-SELECT * FROM TEAM
+SELECT id_employee, first_name, last_name FROM EMPLOYEE WHERE id_team ISNULL
 
-SELECT * FROM Leave
