@@ -26,3 +26,8 @@ CREATE TABLE TEAM (
 
 SELECT id_employee, first_name, last_name FROM EMPLOYEE WHERE id_team ISNULL
 
+SELECT * from LEAVE;
+
+SELECT e.id_employee, e.first_name, e.last_name FROM LEAVE l INNER JOIN  EMPLOYEE e on e.id_employee = l.id_employee
+
+SELECT 
