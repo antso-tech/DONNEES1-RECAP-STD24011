@@ -28,6 +28,12 @@ SELECT id_employee, first_name, last_name FROM EMPLOYEE WHERE id_team ISNULL
 
 SELECT * from LEAVE;
 
-SELECT e.id_employee, e.first_name, e.last_name FROM LEAVE l INNER JOIN  EMPLOYEE e on e.id_employee = l.id_employee
+SELECT e.id_employee, e.first_name, e.last_name FROM EMPLOYEE e LEFT JOIN LEAVE l on e.id_employee = l.id_employee WHERE l.id_employee ISNULL
 
-SELECT 
+SELECT
+l.id_leave, l.start_date, l.end_date, e.first_name, e.last_name, t.name as team
+FROM EMPLOYEE e 
+INNER JOIN TEAM t 
+on e.id_team = t.id_team 
+INNER JOIN LEAVE l 
+on e.id_employee = l.id_employee 
