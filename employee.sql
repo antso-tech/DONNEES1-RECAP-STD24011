@@ -24,33 +24,6 @@ CREATE TABLE TEAM (
     name VARCHAR(50) NOT NULL
 )
 
-DROP TABLE LEAVE
-
-DROP TABLE EMPLOYEE
-
-insert into TEAM (name) values ('Huels-Bode');
-insert into TEAM (name) values ('Hickle, Yost and Friesen');
-insert into TEAM (name) values ('Bergstrom-Windler');
-insert into TEAM (name) values ('Bins, Bauch and Medhurst');
-insert into TEAM (name) values ('Luettgen, Torphy and Keebler');
-insert into TEAM (name) values ('Pacocha-Hackett');
-insert into TEAM (name) values ('MacGyver, Prosacco and Collier');
-insert into TEAM (name) values ('Hand, Swift and Ullrich');
-insert into TEAM (name) values ('Moen, Macejkovic and Glover');
-insert into TEAM (name) values ('Gleichner-Ortiz');
-insert into TEAM (name) values ('Jones and Sons');
-insert into TEAM (name) values ('Dibbert, Zieme and Weissnat');
-insert into TEAM (name) values ('Bosco Inc');
-insert into TEAM (name) values ('Jacobson Group');
-insert into TEAM (name) values ('Pfannerstill Inc');
-insert into TEAM (name) values ('Borer Group');
-insert into TEAM (name) values ('Turner, Hane and Flatley');
-insert into TEAM (name) values ('Reilly-Koss');
-insert into TEAM (name) values ('Shanahan, Waters and Harris');
-insert into TEAM (name) values ('Feest-Jerde');
-
-
-
 
 SELECT * FROM TEAM
 
