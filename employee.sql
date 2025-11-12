@@ -55,5 +55,8 @@ AND end_date >= CURRENT_DATE
 
 SELECT e.id_employee, e.first_name, e.last_name, t.name 
 FROM EMPLOYEE e inner 
-JOIN TEAM t ON e.id_team = t.id_team inner join LEAVE l on e.id_employee = l.id_employee WHERE start_date <= CURRENT_DATE 
+JOIN TEAM t 
+ON e.id_team = t.id_team inner 
+join LEAVE l on e.id_employee = l.id_employee 
+WHERE start_date <= CURRENT_DATE 
 AND end_date >= CURRENT_DATE
