@@ -22,7 +22,7 @@ INNER JOIN LEAVE l
 on e.id_employee = l.id_employee 
 
 --exercice 4
-SELECT  e.contract_type, count(*) as number_employee FROM EMPLOYEE e GROUP BY e.contract_type 
+SELECT  e.contract_type, count(*) as number_employee FROM EMPLOYEE e GROUP BY e.contract_type ORDER BY count(*) 
 
 --exercice 5
 SELECT start_date, end_date 
